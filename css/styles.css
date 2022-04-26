@@ -828,10 +828,9 @@ footer #logo-footer p{
 }
 @media only screen and (max-width: 360px){
     .video-head #descrip-info-head{
-        height: 205px;
+        height: 210px;
     }
     .video-head #descrip-info-head > h1{
-        
         bottom: 0px;
     }
     .cont-decript-tech{
@@ -844,6 +843,9 @@ footer #logo-footer p{
 @media only screen and (max-width: 388px){
     .video-head #descrip-info-head{
         height: 250px;
+    }
+    .video-head #descrip-info-head > h1{
+        bottom: 30px;
     }
     .cont-decript-tech{
         height: 320px;

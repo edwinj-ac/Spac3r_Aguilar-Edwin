@@ -841,7 +841,7 @@ footer #logo-footer p{
         width: 70%;
     }
 }
-@media only screen and (max-width: 370px){
+@media only screen and (min-width: 375px){
     .video-head #descrip-info-head{
         height: 250px;
     }

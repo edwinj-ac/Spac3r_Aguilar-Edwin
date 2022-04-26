@@ -768,7 +768,7 @@ footer #logo-footer p{
 }
 
 .cont-contactanos-page{
-    height: 80vh;
+    height: 60vh;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
@@ -1178,7 +1178,7 @@ footer #logo-footer p{
     }
 
     .cont-contactanos-page{
-        height: 60vh;
+        height: 80vh;
     }
     .footer #footer--contact-page{
         height: 100px;

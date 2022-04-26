@@ -349,7 +349,7 @@ nav ul li {
         "comentario comentario"
         "comentario comentario"
         "submit submit";
-    margin-left: 20px;
+    margin-left: 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:repeat(5, 1fr);
 }
@@ -839,6 +839,17 @@ footer #logo-footer p{
     }
     .cont-decript-tech video{
         width: 70%;
+    }
+}
+@media only screen and (max-width: 380px){
+    .video-head #descrip-info-head{
+        height: 250px;
+    }
+    .cont-decript-tech{
+        height: 320px;
+    }
+    .cont-decript-tech video{
+        width: 75%;
     }
 }
 @media only screen and (min-width: 390px){

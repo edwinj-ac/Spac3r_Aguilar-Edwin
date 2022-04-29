@@ -10,24 +10,26 @@
 }
 
 html{
-    background-image: linear-gradient(to bottom, #02072d, #020d34, #01113a, #001441, #011748, #011e52, #01265d, #002e68, #003d78, #004d87, #005d96, #086da5);
     font-size: 62.5%;
-    font-family: 'Kanit', sans-serif; 
-    color: white;
-}
-
-header{
     width: 100%;
-    height: 60px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+}
+body{
+    background-image: linear-gradient(to bottom, #02072d, #020d34, #01113a, #001441, #011748, #011e52, #01265d, #002e68, #003d78, #004d87, #005d96, #086da5);
+    color: white;
+    font-family: 'Kanit', sans-serif; 
+}
+header{
+    background-color: #02072d;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
+}
+.container-fluid{
+    width: 100%;
+    color: white;
     background-color: #02072d;
 }
-
 nav{
     width: 100vw;
     height: 65px;
@@ -80,7 +82,9 @@ nav ul li {
     font-size: 1.2rem;
     margin-right: 10px;
 }
-
+.navbar-toggler{
+    background-color: white;
+}
 
 .div-general{
     width: 100%;
@@ -404,10 +408,17 @@ nav ul li {
 #contact-content textarea{
     width: 350px;
     height: 100px;
+    border: none;
+    border-bottom: 2.5px solid var(--blue_low);
+    background-color: var(--night_blue);
+    margin-top: 20px;
+    color: white;
+    font-family: 'Kanit', sans-serif;;
 }
 .footer{
     width: 100%;
     grid-area: footer;
+    margin-top: 45px;
 }
 .footer footer{
     display: grid;
@@ -525,39 +536,40 @@ footer #logo-footer p{
         "iot iot iot"
         "games games games";
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1.5fr);
     justify-content: center;
-
+    margin-top: 80px;
 }
 .cont-projects h2{
     font-size: 2rem;
     font-weight: 400;
 }
 .cont-projects img{
-    height: 60px;
+    height: 150px;
     width: 80px;
     border-radius: 5px;
 }
-
+/*
 .cont-projects button{
     height: 25px;
     width: 80px;
     margin-top: 15px;
     font-size: 1.1rem;
 }
-
+*/
 .cont-projects p{
     font-size: 1rem;
     font-weight: 200;
-    text-align: left;
+    text-align: center;
 }
 
 .cont-projects .apps-mobile{
     width: 100%;
-    height: 100px;
+    height: 150px;
     grid-area: mobile;
-
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    /*display: grid;
     grid-template-areas: 
         "title title title title"
         "cont1 cont2 cont3 cont4"
@@ -566,9 +578,10 @@ footer #logo-footer p{
     grid-template-rows: 0.3fr 1fr 1fr;
     justify-content: center;
     margin-left: 5px;
-    margin-top: 0;
+    margin-top: 0;*/
 }
 
+/*
 .cont-projects .apps-mobile h2{
     grid-area: title;
     margin-left: 2px;
@@ -585,12 +598,20 @@ footer #logo-footer p{
 .cont-projects .apps-mobile #project4--apps-mobile{
     grid-area: cont4;
 }
+*/
 
+#carouselExampleIndicators{
+    height: 100%;
+}
+.carousel-inner{
+    height: 350px;
+}
 .cont-projects .apps-web{
     width: 100%;
     height: 150px;
     grid-area: web;
-
+    display: flex;
+    flex-direction: column;/*
     display: grid;
     grid-template-areas: 
         "title title title title"
@@ -599,8 +620,8 @@ footer #logo-footer p{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 0.3fr 1fr 1fr;
     justify-content: center;
-    margin-left: 5px;
-}
+    margin-left: 5px;*/
+}/*
 .cont-projects .apps-web h2{
     grid-area: title;
     margin-left: 2px;
@@ -617,12 +638,14 @@ footer #logo-footer p{
 .cont-projects .apps-web #project4--apps-web{
     grid-area: cont4;
 }
-
+*/
 .cont-projects .ar-vr_cont{
     width: 100%;
     height: 150px;
     grid-area: avr;
-
+    display: flex;
+    flex-direction: column;
+/*
     display: grid;
     grid-template-areas: 
         "title title title title"
@@ -632,9 +655,9 @@ footer #logo-footer p{
     grid-template-rows: 0.3fr 1fr 1fr;
     justify-content: center;
     align-content: center;
-    margin-left: 5px;
+    margin-left: 5px;*/
 }
-
+/*
 .cont-projects .ar-vr_cont h2{
     grid-area: title;
     margin-left: 2px;
@@ -654,12 +677,14 @@ footer #logo-footer p{
 .cont-projects .ar-vr_cont #project4--ar-vr_cont{
     grid-area: cont4;
     margin-right: 5px;
-}
+}*/
 .cont-projects .arti-intell{
     width: 100%;
     height: 150px;
     grid-area: ai;
-
+    display: flex;
+    flex-direction: column;
+    /*
     display: grid;
     grid-template-areas: 
         "title title title title"
@@ -669,7 +694,7 @@ footer #logo-footer p{
     grid-template-rows: 0.3fr 1fr 1fr;
     justify-content: center;
     align-content: center;
-    margin-left: 5px;
+    margin-left: 5px;*/
 }
 .cont-projects .arti-intell h2{
     grid-area: title;
@@ -695,7 +720,9 @@ footer #logo-footer p{
     width: 100%;
     height: 150px;
     grid-area: iot;
-
+    display: flex;
+    flex-direction: column;
+    /*
     display: grid;
     grid-template-areas: 
         "title title title title"
@@ -705,9 +732,9 @@ footer #logo-footer p{
     grid-template-rows: 0.3fr 1fr 1fr;
     justify-content: center;
     align-content: center;
-    margin-left: 5px;
+    margin-left: 5px;*/
 }
-
+/*
 .cont-projects .rob-iot-cont h2{
     grid-area: title;
     margin-left: 2px;
@@ -728,12 +755,14 @@ footer #logo-footer p{
     grid-area: cont4;
     margin-right: 5px;
 }
-
+*/
 .cont-projects .games_cont{
     width: 100%;
     height: 150px;
     grid-area: games;
-
+    display: flex;
+    flex-direction: column;
+/*
     display: grid;
     grid-template-areas: 
         "title title title title"
@@ -743,7 +772,7 @@ footer #logo-footer p{
     grid-template-rows: 0.3fr 1fr 1fr;
     justify-content: center;
     align-content: center;
-    margin-left: 5px;
+    margin-left: 5px;*/
 }
 
 .cont-projects .games_cont h2{
@@ -1150,7 +1179,7 @@ footer #logo-footer p{
     /*PROYECTOS HTML*/
     .cont-projects{
         margin-top: 80px;
-        height: 230vh;
+        height: 300vh;
     }
     .cont-projects h2{
         font-size: 2.5rem;
@@ -1158,8 +1187,8 @@ footer #logo-footer p{
         margin-bottom: 20px;
     }
     .cont-projects img{
-        height: 100px;
-        width: 120px;
+        height: 300px;
+        width: 80px;
         border-radius: 10px;
     }
     .cont-projects button{
@@ -1183,5 +1212,9 @@ footer #logo-footer p{
     .footer #footer--contact-page{
         height: 100px;
         margin-top: 50px;
+    }
+
+    .carousel-indicators{
+        bottom: -80px;
     }
 }

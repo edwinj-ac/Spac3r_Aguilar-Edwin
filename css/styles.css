@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-left: 2px;
 }
 
 html{
@@ -353,13 +354,12 @@ nav ul li {
         "comentario comentario"
         "comentario comentario"
         "submit submit";
-    margin-left: 10px;
+    margin-left: 2px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:repeat(5, 1fr);
 }
 #contact-content #form-empresa{
     grid-area: empresa;
-    justify-self: center;
 }
 
 #contact-content #form-name{
@@ -856,6 +856,9 @@ footer #logo-footer p{
     grid-area: contBtn;
 }
 @media only screen and (max-width: 360px){
+    .div-general{
+        height: 224vh;
+    }
     .video-head #descrip-info-head{
         height: 210px;
     }
@@ -868,6 +871,7 @@ footer #logo-footer p{
     .cont-decript-tech video{
         width: 70%;
     }
+    
 }
 @media only screen and (max-width: 390px){
     .video-head #descrip-info-head{
@@ -926,7 +930,10 @@ footer #logo-footer p{
         margin-right: 30px;
     }
     .video-head #descrip-info-head{
-        height: 830px;
+        height: 790px;
+    }
+    #descrip-info-head > h1{
+        margin-bottom: 200px;
     }
     .div-general{
         width: 100%;
@@ -1216,5 +1223,13 @@ footer #logo-footer p{
 
     .carousel-indicators{
         bottom: -80px;
+    }
+
+    .cont-info-contact{
+        height: 150px;
+    }
+    .cont-info-contact #eslogan {
+        margin-top: 50px;
+        font-size: 3.5rem;
     }
 }

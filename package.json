@@ -1,0 +1,25 @@
+{
+  "name": "spac3r",
+  "version": "1.0.0",
+  "description": "Descargar solo una vez la carpeta de video y evitar subir al repositorio de nuevo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/stylescss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwinj-ac/Spac3r_Aguilar-Edwin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edwinj-ac/Spac3r_Aguilar-Edwin/issues"
+  },
+  "homepage": "https://github.com/edwinj-ac/Spac3r_Aguilar-Edwin#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

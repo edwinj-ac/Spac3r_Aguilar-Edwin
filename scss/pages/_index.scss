@@ -347,12 +347,6 @@
             }
         }
     } 
-    .cont-decript-tech{
-        height: 300px;
-        video{
-            width: 70%;
-        }
-    }
 }
 
 @media only screen and (max-width: 390px){
@@ -365,14 +359,6 @@
             }
         }
     }
-    
-    .cont-decript-tech{
-        height: 320px;
-
-        video{
-            width: 75%;
-        }
-    }
 }
 
 @media only screen and (min-width: 390px){
@@ -381,24 +367,12 @@
             height: 305px;
         }
     }
-    .cont-decript-tech{
-        height: 300px;
-        video{
-            width: 70%;
-        }
-    }
 }
 
 @media only screen and (min-width: 412px){
     .video-head {
         #descrip-info-head{
             height: 355px;
-        }
-    }
-    .cont-decript-tech{
-        height: 300px;
-        video{
-            width: 70%;
         }
     }
 }

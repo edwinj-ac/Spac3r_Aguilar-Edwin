@@ -334,37 +334,21 @@ nav {
   .video-head #descrip-info-head {
     height: 210px; }
     .video-head #descrip-info-head h1 {
-      bottom: 0px; }
-  .cont-decript-tech {
-    height: 300px; }
-    .cont-decript-tech video {
-      width: 70%; } }
+      bottom: 0px; } }
 
 @media only screen and (max-width: 390px) {
   .video-head #descrip-info-head {
     height: 250px; }
     .video-head #descrip-info-head h1 {
-      bottom: 30px; }
-  .cont-decript-tech {
-    height: 320px; }
-    .cont-decript-tech video {
-      width: 75%; } }
+      bottom: 30px; } }
 
 @media only screen and (min-width: 390px) {
   .video-head #descrip-info-head {
-    height: 305px; }
-  .cont-decript-tech {
-    height: 300px; }
-    .cont-decript-tech video {
-      width: 70%; } }
+    height: 305px; } }
 
 @media only screen and (min-width: 412px) {
   .video-head #descrip-info-head {
-    height: 355px; }
-  .cont-decript-tech {
-    height: 300px; }
-    .cont-decript-tech video {
-      width: 70%; } }
+    height: 355px; } }
 
 @media only screen and (min-width: 1024px) {
   .video-head #descrip-info-head {
@@ -572,7 +556,7 @@ nav {
 
 .cont-decript-tech {
   width: 100%;
-  height: 100px;
+  height: 340px;
   display: grid;
   grid-template-areas: "title title title" "video video video" "desc desc desc" "btn btn btn";
   grid-template-columns: repeat(3, 1fr);
@@ -582,10 +566,10 @@ nav {
   .cont-decript-tech h2 {
     grid-area: title;
     justify-self: center; }
-  .cont-decript-tech button, .cont-decript-tech .cont-projects button, .cont-decript-tech #cont-button--info-project > button {
+  .cont-decript-tech button {
     width: 120px;
     height: 35px;
-    background-color: var(--blue_low);
+    background-color: #0c89cc;
     color: white;
     border: none;
     border-radius: 8px;
@@ -605,3 +589,59 @@ nav {
   .cont-decript-tech button {
     grid-area: btn;
     justify-self: center; }
+
+@media only screen and (max-width: 360px) {
+  .cont-decript-tech {
+    height: 340px; }
+    .cont-decript-tech video {
+      width: 70%; } }
+
+@media only screen and (max-width: 390px) {
+  .cont-decript-tech {
+    height: 320px; }
+    .cont-decript-tech video {
+      width: 75%; } }
+
+@media only screen and (min-width: 390px) {
+  .cont-decript-tech {
+    height: 300px; }
+    .cont-decript-tech video {
+      width: 70%; } }
+
+@media only screen and (min-width: 412px) {
+  .cont-decript-tech {
+    height: 300px; }
+    .cont-decript-tech video {
+      width: 70%; } }
+
+@media only screen and (min-width: 1024px) {
+  .cont-general {
+    margin-top: 90px; }
+  .cont-decript-tech {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-areas: "title title title title" "video video desc desc" "video video desc desc" "video video btn btn";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+    justify-content: center;
+    margin-bottom: 10px; }
+    .cont-decript-tech h2 {
+      grid-area: title;
+      text-align: start;
+      width: 100%;
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 600; }
+    .cont-decript-tech video {
+      grid-area: video;
+      width: 80%; }
+    .cont-decript-tech p {
+      grid-area: desc;
+      text-align: justify;
+      font-size: 1.8rem;
+      align-self: center;
+      justify-self: center; }
+    .cont-decript-tech button {
+      grid-area: btn;
+      justify-self: center; } }

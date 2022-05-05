@@ -1,0 +1,376 @@
+
+
+
+.div-general{
+    width: 100%;
+    /*height: 300vh;*/
+    height: 200vh;
+    display: grid;
+    grid-template-areas: 
+        "video video"
+        "technologies technologies"
+        "logos logos"
+        "redes redes"
+        "info info"
+        "footer footer";
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1.5fr 1.5fr 0.3fr 1fr 0.2fr;
+    /*grid-template-rows: 6fr 3fr 1.5fr 2fr 2.5fr 1fr;*/
+    justify-content: center; /*horizontal*/
+    align-content: center; /*vertical*/
+    
+}
+
+.video-head{
+    grid-area: video;
+    width: 100%;
+
+    video{
+        width: 100%;
+        height: 100%;
+        margin-top: 25px;
+    }
+
+    #descrip-info-head{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 320px;
+        background-color: rgba(5, 83, 138, 0.366);
+        h1{
+            color: $white;
+            font-size: 3rem;
+            font-weight: 600;
+            text-align: center;
+            position: absolute;
+            bottom: 100px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
+}
+
+.cont-technologies{
+    grid-area: technologies;
+
+    .techonlogies-content{
+        width: 100%;
+        /*height: 300vh;*/
+        height: 100%;
+        display: grid;
+        grid-template-areas: 
+            "app  web"
+            "avr ai"
+            "rob game";
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:repeat(3, 1fr);
+        justify-content: center; /*horizontal*/
+        align-content: center; /*vertical*/
+        text-align: center;
+
+        h3{
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        img{
+            height: 80px;
+            width: 100px;
+            border-radius: 5px;
+        }
+        p{
+            display: none;
+        }
+        #techs-apps{
+            grid-area: app;
+            justify-self: center;
+            align-self: center;
+        
+        }
+        #techs-web{
+            grid-area: web;
+            justify-self: center;
+            align-self: center;
+        }
+        #techs-avr{
+            grid-area: avr;
+            justify-self: center;
+            align-self: center;
+        }
+        #techs-avr > h3{
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        #techs-ai{
+            grid-area: ai;
+            justify-self: center;
+            align-self: center;
+        }
+        #techs-rob{
+            grid-area: rob;
+            justify-self: center;
+            align-self: center;
+        }
+        #techs-game{
+            grid-area: game;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+}
+
+.cont-logos-techs{
+    grid-area: logos;
+    text-align: center;
+    h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .logos-tech{
+        width: 100%;
+        /*height: 300vh;*/
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows:repeat(3, 1fr);
+        justify-items: center;
+        align-items: start;
+        margin-left: 5px;
+        margin-right: 5px;
+    
+        /*justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        align-content: stretch;*/
+    }
+    img{
+        height: 55px;
+        width: 55px;
+    }
+}
+
+.redes_sociales-cont{
+    grid-area: redes;
+
+    #info-redes_sociales{
+        h3{
+            font-size: 2rem;
+            font-weight: 300;
+            margin-left: 20px;
+        }
+        p{
+            font-size: 1.5rem;
+            font-weight: 100;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+    }
+
+    .content-redesSociales{
+        width: 100%;
+        /*height: 300vh;*/
+        height: 200px;
+        display: grid;
+        grid-template-areas: 
+            "title title buttons buttons"
+            "title title buttons buttons";
+        margin-top: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows:repeat(2, 1fr);
+        justify-content: center; /*horizontal*/
+        align-content: center; /*vertical*/
+        text-align: center;
+
+        #info-redes_sociales{
+            grid-area: title;
+            justify-self: center;
+            align-self: center;
+        }
+
+        #buttons-cont-redes_sociales{
+            grid-area: buttons;
+        
+        }
+    }
+
+    #buttons-cont-redes_sociales{
+        margin-top: 10px;
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:repeat(2, 1fr);
+        justify-content: end; /*horizontal*/
+        align-content: space-between; /*vertical*/
+        text-align: center;
+
+        button{
+            height: 60px;
+            width: 60px;
+            border-color: none;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            background-color: transparent;
+            background-repeat: none;
+            background-size:cover;
+            background-position:center;
+        }
+
+        #facebook-btn{
+            background-image: url(../assets/icons/facebook.png);
+            align-self: end;
+            justify-self: end;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            border-radius: 15px
+        }
+        #instagram-btn{
+            background-image: url(../assets/icons/instagram.png);
+            border-radius: 15px;
+            align-self: end;
+            justify-self: start;
+            margin-bottom: 10px;
+        }
+        #tiktok-btn{
+            background-image: url(../assets/icons/tik-tok.png);
+            border-radius: 15px;
+            justify-self: end;
+            margin-right: 10px;
+        }
+        #whatsapp-btn{
+            background-image: url(../assets/icons/whatsapp.png);
+        }
+    }
+}
+
+.contact-info{
+    grid-area: info;
+
+    h2{
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
+    form{
+        display: grid;
+        grid-template-areas: 
+            "empresa nombre"
+            "tel email"
+            "comentario comentario"
+            "comentario comentario"
+            "submit submit";
+        margin-left: 2px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:repeat(5, 1fr);
+    }
+
+    
+    #contact-content{
+        font-size: 1.5em;
+
+        #form-empresa{
+            grid-area: empresa;
+        }
+    
+        #form-name{
+            grid-area: nombre;
+        }
+    
+        #form-tel{
+            grid-area: tel;
+        }
+    
+        #form-email{
+            grid-area: email;
+        }
+    
+        #form-coment{
+            grid-area: comentario;
+        }
+    
+        #form-submit{
+            grid-area: submit;
+            justify-self: center;
+            margin: 0;
+        }
+
+        input[type=text], input[type=number] , input[type=email], textarea{
+            border: none;
+            border-bottom: 2.5px solid $blue-low;
+            color: $white;
+            background-color: $night_blue;
+            height: 25px;
+            border-radius: 5px;
+            font-weight: 100;
+        }
+
+        input[type=submit]{
+            width: 80px;
+            height: 35px;
+            background-color: $night_blue;
+            color: $white;
+            border: none;
+            border-radius: 8px;
+            border-bottom: 2px solid $blue-low;
+            
+        }
+
+        textarea{
+            width: 350px;
+            height: 100px;
+            border: none;
+            border-bottom: 2.5px solid $blue-low;
+            background-color: $night_blue;
+            margin-top: 20px;
+            color: $white;
+            font-family: 'Kanit', sans-serif;;
+        }
+
+    }
+    
+}
+
+@media only screen and (max-width: 360px){
+    .div-general{
+        height: 224vh;
+    }
+    .video-head{
+        #descrip-info-head{
+            height: 210px;
+            h1{
+                bottom: 0px;
+            }
+        }
+    } 
+    .cont-decript-tech{
+        height: 300px;
+        video{
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .video-head {
+        #descrip-info-head{
+            height: 250px;
+
+            h1{
+                bottom: 30px;
+            }
+        }
+    }
+    
+    .cont-decript-tech{
+        height: 320px;
+
+        video{
+            width: 75%;
+        }
+    }
+}

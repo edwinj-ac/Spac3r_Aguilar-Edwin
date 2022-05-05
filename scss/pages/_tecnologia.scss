@@ -1,0 +1,57 @@
+.cont-general{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.cont-decript-tech{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "video video video"
+    "desc desc desc"
+    "btn btn btn";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    h2{
+        grid-area: title;
+        justify-self: center;
+    }
+
+    button, .cont-projects button, #cont-button--info-project > button{
+        width: 120px;
+        height: 35px;
+        background-color: var(--blue_low);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        border-bottom: 2px solid white;
+    }
+
+    video{
+        grid-area: video;
+        width: 95%;
+        justify-self: center;
+        border-radius: 16px;
+    }
+
+    p{
+        grid-area: desc;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align:initial;
+        font-size: 1.3rem;
+    }
+
+    button{
+        grid-area: btn;
+        justify-self: center;
+    }
+}

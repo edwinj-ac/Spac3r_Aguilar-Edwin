@@ -1,0 +1,56 @@
+.footer{
+    width: 100%;
+    grid-area: footer;
+    margin-top: 45px;
+
+    footer{
+        display: grid;
+        grid-template-areas: 
+            "logo datos nav"
+            "terminos datos nav";
+        width: 100%;
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:repeat(2, 1fr);
+        color: $white;
+        background-color: $blue_low;
+        align-items: center;
+        justify-items: center;
+
+        #logo-footer{
+            grid-area: logo;
+            display: flex;
+
+            p{
+                text-align: center;
+                margin-top: 20px;
+                margin-left: 5px;
+                font-size: 1.5rem;
+            }
+
+            img{
+                height: 40px;
+                width: 40px;
+            }
+            
+        }
+
+        #terms--footer{
+            grid-area: terminos;
+            align-self: center;
+            justify-self: center;
+        }
+
+        #data--footer{
+            grid-area: datos;
+        }
+
+        #links--footer{
+            grid-area: nav;
+            display: grid;
+        }
+
+    }
+    
+
+}

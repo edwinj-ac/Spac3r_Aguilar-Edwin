@@ -1,6 +1,4 @@
 
-
-
 .div-general{
     width: 100%;
     /*height: 300vh;*/
@@ -38,6 +36,7 @@
         width: 100%;
         height: 320px;
         background-color: rgba(5, 83, 138, 0.366);
+        margin-top: 70px;
         h1{
             color: $white;
             font-size: 3rem;
@@ -48,6 +47,7 @@
             margin-left: 40px;
             margin-right: 40px;
         }
+        
     }
 }
 
@@ -373,4 +373,235 @@
             width: 75%;
         }
     }
+}
+
+@media only screen and (min-width: 390px){
+    .video-head {
+        #descrip-info-head{
+            height: 305px;
+        }
+    }
+    .cont-decript-tech{
+        height: 300px;
+        video{
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (min-width: 412px){
+    .video-head {
+        #descrip-info-head{
+            height: 355px;
+        }
+    }
+    .cont-decript-tech{
+        height: 300px;
+        video{
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .video-head {
+        #descrip-info-head{
+            height: 750px;
+
+            h1{
+                margin-bottom: 200px;
+                font-size: 8rem;
+                font-weight: 600;
+                bottom: 150px;
+                text-align: center;
+                margin-right: 0;
+            }
+        }
+    }
+    .div-general{
+        width: 100%;
+        /*height: 300vh;*/
+        height: 300vh;
+        display: grid;
+        grid-template-areas: 
+            "video video"
+            "technologies technologies"
+            "logos logos"
+            "redes redes"
+            "info info"
+            "footer footer";
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1.5fr 2fr 1.5fr 0.3fr 1fr 0.2fr;
+        /*grid-template-rows: 6fr 3fr 1.5fr 2fr 2.5fr 1fr;*/
+        justify-content: center; /*horizontal*/
+        align-content: center; /*vertical*/
+        
+    }
+
+    .cont-technologies{
+
+        .techonlogies-content{
+            height: 350px;
+            display: flex;  
+            flex-direction: row; 
+            justify-content: space-evenly;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            
+            div{
+                height: 95%;
+                width: 200px;
+                margin-top: 15px;
+
+                h3{
+                    font-weight: 400;
+                    font-size: 2rem;
+                    text-align: center;
+                    margin-top: 15px;
+                }
+
+                #text_cont-tech{
+                    margin-top: 0;
+                }
+            }
+
+            p{
+                display: inline;
+                font-weight: 100;
+                font-size: 1.5rem;
+                text-align: justify;
+                margin-top: 15px;
+        
+            }
+            img{
+                height: 125px;
+                width: 200px;
+                border-radius: 10px;
+            }
+        }
+
+        #title--cont-tech{
+            margin-top: 0px;
+        }
+
+        .logos-tech{
+
+            img{
+                height: 70px;
+                width: 70px;
+            }
+        } 
+    }
+
+    .redes_sociales-cont {
+
+        .content-redesSociales{
+            width: 100%;
+            /*height: 300vh;*/
+            height: 200px;
+            display: grid;
+            grid-template-areas: 
+                "title title buttons buttons"
+                "title title buttons buttons";
+            margin-top: 30px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows:repeat(2, 1fr);
+            justify-content: center; /*horizontal*/
+            align-content: center; /*vertical*/
+            text-align: center;
+
+            #info-redes_sociales{
+                h3{
+                    font-size: 4rem;
+                    font-weight: 400;
+                }
+                p{
+                    font-size: 2.5rem;
+                    font-weight: 100;
+                }
+                
+            }
+
+            #buttons-cont-redes_sociales{
+                margin-top: 10px;
+                margin-left: 10px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows:repeat(1, 1fr);
+                justify-content: center; /*horizontal*/
+                align-content: space-between; /*vertical*/
+
+                button{
+                    height: 80px;
+                    width: 80px;
+                    border-color: none;
+                    border-radius: 20px;
+                }
+
+                #facebook-btn{
+                    align-self: center;
+                    justify-self: center;
+                    
+                }
+                #instagram-btn{
+                    align-self: center;
+                    justify-self: center;
+                }
+                #tiktok-btn{
+                    justify-self: center;
+                    align-self: center;
+                }
+                #whatsapp-btn{
+                    justify-self: center;
+                    align-self: center;
+                }
+            }
+        }
+    }
+    
+    .contact-info {
+
+        #contact-content{
+            margin-top: 20px;
+
+            #form-empresa{
+                grid-area: empresa;
+                justify-self: end;
+                margin-right: 20px;
+            }
+
+            #form-name{
+                grid-area: nombre;
+            }
+
+            #form-tel{
+                grid-area: tel;
+                justify-self: end;
+                margin-right: 20px;
+            }
+
+            #form-email{
+                grid-area: email;
+            }
+
+            #form-coment{
+                grid-area: comentario;
+                display: flex;
+                justify-self: center;
+            }
+            #form-submit{
+                grid-area: submit;
+                justify-self: center;
+                margin-top: 10px;
+            }
+            input[type=text], input[type=number] , input[type=email], textarea{
+                width: 400px;
+                margin-left: 10px;
+            }
+        }
+    }
+    
+    
 }

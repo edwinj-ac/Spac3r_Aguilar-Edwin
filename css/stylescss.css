@@ -99,6 +99,8 @@ nav {
   grid-area: video;
   width: 100%; }
   .video-head video {
+    /* width: 100%;
+        height: 100%;*/
     width: 100%;
     height: 100%;
     margin-top: 25px; }
@@ -122,8 +124,8 @@ nav {
 .cont-technologies {
   grid-area: technologies; }
   .cont-technologies .techonlogies-content {
-    width: 100%;
     /*height: 300vh;*/
+    width: 100%;
     height: 100%;
     display: grid;
     grid-template-areas: "app  web" "avr ai" "rob game";
@@ -176,13 +178,13 @@ nav {
   grid-area: logos;
   text-align: center; }
   .cont-logos-techs h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 20px; }
   .cont-logos-techs .logos-tech {
-    width: 100%;
     /*height: 300vh;*/
+    width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -278,7 +280,7 @@ nav {
   grid-area: info; }
   .contact-info h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400; }
   .contact-info form {
     display: grid;
@@ -287,7 +289,7 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .contact-info #contact-content {
-    font-size: 1.5em; }
+    font-size: 1.5rem; }
     .contact-info #contact-content #form-empresa {
       grid-area: empresa; }
     .contact-info #contact-content #form-name {
@@ -426,7 +428,7 @@ nav {
       font-size: 4rem;
       font-weight: 400; }
     .redes_sociales-cont .content-redesSociales #info-redes_sociales p {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 100; }
     .redes_sociales-cont .content-redesSociales #buttons-cont-redes_sociales {
       margin-top: 10px;
@@ -555,6 +557,8 @@ nav {
   row-gap: 20px; }
 
 .cont-decript-tech {
+  /*width: 100%;
+    height: 340px;*/
   width: 100%;
   height: 340px;
   display: grid;
@@ -567,6 +571,8 @@ nav {
     grid-area: title;
     justify-self: center; }
   .cont-decript-tech button {
+    /*width: 120px;
+        height: 35px;*/
     width: 120px;
     height: 35px;
     background-color: #0c89cc;
@@ -592,12 +598,14 @@ nav {
 
 @media only screen and (max-width: 360px) {
   .cont-decript-tech {
+    width: 100%;
     height: 340px; }
     .cont-decript-tech video {
       width: 70%; } }
 
 @media only screen and (max-width: 390px) {
   .cont-decript-tech {
+    width: 100%;
     height: 320px; }
     .cont-decript-tech video {
       width: 75%; } }
@@ -618,6 +626,8 @@ nav {
   .cont-general {
     margin-top: 90px; }
   .cont-decript-tech {
+    /* width: 100%;
+        height: 400px;*/
     width: 100%;
     height: 400px;
     display: grid;
@@ -645,3 +655,216 @@ nav {
     .cont-decript-tech button {
       grid-area: btn;
       justify-self: center; } }
+
+.cont-projects {
+  margin-top: 60px;
+  width: 100%;
+  height: 180vh;
+  display: grid;
+  grid-template-areas: "mobile mobile mobile" "web web web" "avr avr avr" "ai ai ai" "iot iot iot" "games games games";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1.5fr);
+  justify-content: center;
+  margin-top: 80px; }
+  .cont-projects h2 {
+    font-size: 2rem;
+    font-weight: 400; }
+  .cont-projects img {
+    width: 80px;
+    height: 150px;
+    border-radius: 5px; }
+  .cont-projects p {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center; }
+  .cont-projects .apps-mobile {
+    width: 100%;
+    height: 150px;
+    grid-area: mobile;
+    display: flex;
+    flex-direction: column; }
+  .cont-projects .apps-web {
+    width: 100%;
+    height: 150px;
+    grid-area: web;
+    display: flex;
+    flex-direction: column; }
+  .cont-projects .ar-vr_cont {
+    width: 100%;
+    height: 150px;
+    grid-area: avr;
+    display: flex;
+    flex-direction: column; }
+  .cont-projects .arti-intell {
+    width: 100%;
+    height: 150px;
+    grid-area: ai;
+    display: flex;
+    flex-direction: column; }
+    .cont-projects .arti-intell h2 {
+      grid-area: title;
+      margin-left: 2px; }
+    .cont-projects .arti-intell #project1--arti-intell {
+      grid-area: cont1;
+      margin-right: 10px; }
+    .cont-projects .arti-intell #project2--arti-intell {
+      grid-area: cont2;
+      margin-right: 5px; }
+    .cont-projects .arti-intell #project3--arti-intell {
+      grid-area: cont3;
+      margin-right: 5px; }
+    .cont-projects .arti-intell #project4--arti-intell {
+      grid-area: cont4;
+      margin-right: 5px; }
+  .cont-projects .rob-iot-cont {
+    width: 100%;
+    height: 150px;
+    grid-area: iot;
+    display: flex;
+    flex-direction: column; }
+  .cont-projects .games_cont {
+    width: 100%;
+    height: 150px;
+    grid-area: games;
+    display: flex;
+    flex-direction: column; }
+    .cont-projects .games_cont h2 {
+      grid-area: title;
+      margin-left: 2px; }
+    .cont-projects .games_cont #project1--games_cont {
+      grid-area: cont1;
+      margin-right: 10px; }
+    .cont-projects .games_cont #project2--games_cont {
+      grid-area: cont2;
+      margin-right: 5px; }
+    .cont-projects .games_cont #project3--games_cont {
+      grid-area: cont3;
+      margin-right: 5px; }
+    .cont-projects .games_cont #project4--games_cont {
+      grid-area: cont4;
+      margin-right: 5px; }
+
+#carouselExampleIndicators {
+  height: 100%; }
+
+.carousel-inner {
+  height: 350px; }
+
+@media only screen and (min-width: 1024px) {
+  .cont-projects {
+    margin-top: 80px;
+    height: 300vh; }
+    .cont-projects h2 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 20px; }
+    .cont-projects img {
+      width: 80px;
+      height: 300px;
+      border-radius: 10px; }
+    .cont-projects button {
+      width: 100px;
+      height: 30px;
+      margin-top: 15px;
+      font-size: 1.2rem; }
+    .cont-projects .apps-mobile, .cont-projects .apps-web, .cont-projects .ar-vr_cont, .cont-projects .arti-intell, .cont-projects .rob-iot-cont, .cont-projects .games_cont {
+      height: 220px; }
+    .cont-projects .cont-info-dev {
+      justify-self: center;
+      text-align: center; } }
+
+.cont-info-project {
+  width: 100%;
+  height: 150vh;
+  display: grid;
+  grid-template-areas: "video video video video video" "descr descr descr descr descr" ". img1 img1 img1 ." ". img2 img2 img2 ." ". img3 img3 img3 ." ". . contBtn . .";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-content: center;
+  align-content: center;
+  margin-left: 5px;
+  margin-top: 65px; }
+  .cont-info-project img {
+    width: 90px;
+    height: 70px; }
+  .cont-info-project #video--proyect-info {
+    grid-area: video;
+    margin-left: 15px;
+    justify-self: center; }
+  .cont-info-project #description-video {
+    grid-area: descr; }
+  .cont-info-project #cont-img-1 {
+    grid-area: img1; }
+  .cont-info-project #cont-img-2 {
+    grid-area: img2; }
+  .cont-info-project #cont-img-3 {
+    grid-area: img3; }
+  .cont-info-project #cont-button--info-project {
+    grid-area: contBtn; }
+    .cont-info-project #cont-button--info-project button {
+      margin-top: 20px;
+      margin-left: 70px; }
+  .cont-info-project #cont-button--info-project button {
+    width: 120px;
+    height: 35px;
+    background-color: #0c89cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 2px solid white;
+    margin-right: 65px; }
+
+.img-descr-info {
+  display: grid;
+  grid-template-areas: "img img img" "descrpImg descrpImg descrpImg";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.4fr 1fr;
+  gap: 5px;
+  margin-top: 10px; }
+  .img-descr-info img {
+    grid-area: img;
+    justify-self: center; }
+  .img-descr-info p {
+    grid-area: descrpImg; }
+
+@media only screen and (min-width: 1024px) {
+  .cont-info-project {
+    margin-top: 100px; }
+  .img-descr-info {
+    grid-template-areas: "img img descrpImg descrpImg" "img img descrpImg descrpImg";
+    grid-template-columns: 0.5fr 0.5fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 10px;
+    align-content: center; }
+    .img-descr-info img {
+      height: 120px;
+      width: 180px; }
+    .img-descr-info p {
+      align-self: center; }
+  #cont-button--info-project button {
+    margin-right: 0; } }
+
+.cont-contactanos-page {
+  height: 60vh;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+  .cont-contactanos-page p {
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px; }
+
+@media only screen and (min-width: 1024px) {
+  .cont-contactanos-page {
+    height: 80vh; }
+  .footer #footer--contact-page {
+    height: 100px;
+    margin-top: 50px; }
+  .cont-info-contact {
+    height: 150px; }
+    .cont-info-contact #eslogan {
+      margin-top: 50px;
+      font-size: 3.5rem; } }

@@ -1,0 +1,116 @@
+@mixin sizes($height, $width) {
+    width: $width;
+    height: $height;
+}
+
+.cont-info-project{
+    @include sizes(150vh, 100%);
+    display: grid;
+    grid-template-areas: 
+        "video video video video video"
+        "descr descr descr descr descr"
+        ". img1 img1 img1 ."
+        ". img2 img2 img2 ."
+        ". img3 img3 img3 ."
+        ". . contBtn . .";
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    align-content: center;
+    margin-left: 5px;
+    margin-top: 65px;
+
+    img{
+        @include sizes(70px, 90px);
+    }
+    #video--proyect-info{
+        grid-area: video;
+        margin-left: 15px;
+        justify-self: center;
+    }
+    #description-video{
+        grid-area: descr;
+    }
+    #cont-img-1{
+        grid-area: img1;
+    }
+    #cont-img-2{
+        grid-area: img2;
+    }
+    #cont-img-3{
+        grid-area: img3;
+    }    
+    #cont-button--info-project{
+        grid-area: contBtn;
+
+        button{
+            margin-top: 20px;
+            margin-left: 70px;
+        }
+    }
+
+    #cont-button--info-project{
+        button{
+            width: 120px;
+            height: 35px;
+            background-color: #0c89cc;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            border-bottom: 2px solid white;
+            margin-right: 65px;
+        }
+    }
+    
+}
+
+.img-descr-info{
+    display: grid;
+    grid-template-areas: 
+        "img img img"
+        "descrpImg descrpImg descrpImg";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.4fr 1fr;
+    gap: 5px;
+    margin-top: 10px;
+
+    img{
+        grid-area: img;
+        justify-self: center;
+    }
+
+    p{
+        grid-area: descrpImg;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .cont-info-project{
+        margin-top: 100px;
+    }
+
+    .img-descr-info{
+        grid-template-areas: 
+            "img img descrpImg descrpImg"
+            "img img descrpImg descrpImg";
+        grid-template-columns: 0.5fr 0.5fr 0.8fr 0.8fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 10px;
+        align-content: center;
+
+        img{
+            height: 120px;
+            width: 180px;
+        }
+        p{
+            align-self: center;
+        }
+    }
+
+    #cont-button--info-project{
+        button{
+            margin-right: 0;
+        }
+    }
+}

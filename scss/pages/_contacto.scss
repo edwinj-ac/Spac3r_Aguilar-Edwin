@@ -1,0 +1,33 @@
+.cont-contactanos-page{
+    height: 60vh;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    p {
+        font-size: 2rem;
+        font-weight: 100;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .cont-contactanos-page{
+        height: 80vh;
+    }
+    .footer #footer--contact-page{
+        height: 100px;
+        margin-top: 50px;
+    }
+    .cont-info-contact{
+        height: 150px;
+
+        #eslogan {
+            margin-top: 50px;
+            font-size: 3.5rem;
+        }
+    }
+}

@@ -1,0 +1,159 @@
+@mixin sizes($height, $width) {
+    width: $width;
+    height: $height;
+}
+.cont-projects{
+    margin-top: 60px;
+    @include sizes(180vh, 100%);
+    display: grid;
+    grid-template-areas: 
+        "mobile mobile mobile"
+        "web web web"
+        "avr avr avr"
+        "ai ai ai"
+        "iot iot iot"
+        "games games games";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1.5fr);
+    justify-content: center;
+    margin-top: 80px;
+
+    h2{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    img{
+        
+        @include sizes(150px, 80px);
+        border-radius: 5px;
+    }
+    p{
+        font-size: 1rem;
+        font-weight: 200;
+        text-align: center;
+    }
+    .apps-mobile{
+        @include sizes(150px, 100%);
+        grid-area: mobile;
+        display: flex;
+        flex-direction: column;
+    }
+    .apps-web{
+        @include sizes(150px, 100%);
+        grid-area: web;
+        display: flex;
+        flex-direction: column;
+    }
+    .ar-vr_cont{
+        @include sizes(150px, 100%);
+        grid-area: avr;
+        display: flex;
+        flex-direction: column;
+    }
+    .arti-intell{
+        @include sizes(150px, 100%);
+        grid-area: ai;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            grid-area: title;
+            margin-left: 2px;
+        }
+        #project1--arti-intell{
+            grid-area: cont1;
+            margin-right: 10px;
+        }
+        #project2--arti-intell{
+            grid-area: cont2;
+            margin-right: 5px;
+        }
+        #project3--arti-intell{
+            grid-area: cont3;
+            margin-right: 5px;
+        }
+        #project4--arti-intell{
+            grid-area: cont4;
+            margin-right: 5px;
+        }
+    }
+    .rob-iot-cont{
+        @include sizes(150px, 100%);
+        grid-area: iot;
+        display: flex;
+        flex-direction: column;
+    }
+    .games_cont{
+        @include sizes(150px, 100%);
+        grid-area: games;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            grid-area: title;
+            margin-left: 2px;
+        }
+
+        #project1--games_cont{
+            grid-area: cont1;
+            margin-right: 10px;
+        }
+
+        #project2--games_cont{
+            grid-area: cont2;
+            margin-right: 5px;
+        }
+
+        #project3--games_cont{
+            grid-area: cont3;
+            margin-right: 5px;
+        }
+
+        #project4--games_cont{
+            grid-area: cont4;
+            margin-right: 5px;
+        }
+    }
+
+}
+
+#carouselExampleIndicators{
+    height: 100%;
+}
+.carousel-inner{
+    height: 350px;
+}
+
+@media only screen and (min-width: 1024px){
+    .cont-projects{
+        margin-top: 80px;
+        height: 300vh;
+
+        h2{
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        img{
+            @include sizes(300px, 80px);
+            border-radius: 10px;
+        }
+
+        button{
+            @include sizes(30px, 100px);
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        .apps-mobile, .apps-web, .ar-vr_cont, .arti-intell, .rob-iot-cont, .games_cont{
+            height: 220px;
+        }
+        .cont-info-dev{
+            justify-self: center;
+            text-align: center;
+        }
+    
+
+    }
+}

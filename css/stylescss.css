@@ -63,6 +63,14 @@ nav {
       font-weight: 300;
       font-size: 1.2rem;
       margin-right: 10px; }
+    nav ul .nav-item a, nav ul #navbarDropdownMenuLink {
+      color: white; }
+  nav .dropdown-menu {
+    background-color: #0c89cc;
+    border-radius: 10px;
+    /*width: 180px;*/ }
+    nav .dropdown-menu .dropdown-item {
+      border-radius: 10px; }
   nav .navbar-toggler {
     background-color: white; }
 
@@ -772,6 +780,29 @@ nav {
     .cont-projects .cont-info-dev {
       justify-self: center;
       text-align: center; } }
+
+#title-section {
+  margin-top: 60px; }
+  #title-section h3 {
+    font-size: 2.5rem; }
+  #title-section p {
+    font-size: 2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px; }
+
+.card {
+  background-color: #0c89cc;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .card img {
+    height: 180px; }
+  .card #imgSeguridad {
+    width: 100px;
+    align-self: center; }
+  .card #imgBrazo {
+    width: 200px;
+    align-self: center; }
 
 .cont-info-project {
   width: 100%;

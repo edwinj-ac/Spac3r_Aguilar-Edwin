@@ -1,0 +1,29 @@
+#title-section{
+    margin-top: 60px; 
+    h3{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 2rem;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+}
+
+.card{
+    background-color: $blue-low;
+    margin-left: 10px;
+    margin-right: 10px;
+    img{
+        height: 180px;
+    }
+    #imgSeguridad{
+        width: 100px;
+        align-self: center;
+    }
+    #imgBrazo{
+        width: 200px;
+        align-self: center;
+    }
+}

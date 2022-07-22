@@ -1,10 +1,38 @@
-let myForm = document.getElementById("form-contact");
-myForm.addEventListener("submit", validarFormulario);
+const appPageTrig = document.getElementById("appMobilePage");
+const webPageTrig = document.getElementById("appWebPage");
+const arvrPageTrig = document.getElementById("appARVRPage");
+const aiPageTrig = document.getElementById("appAIPage");
+const gamesPageTrig = document.getElementById("appGamesPage");
+const robPageTrig = document.getElementById("appRobPage");
 
-function validarFormulario(e){
-    e.preventDefault();
-    let formulario = e.target
-    console.log(formulario.children[0].value);  
-    console.log("Valores de formulario ingresados");  
+
+appPageTrig.addEventListener("click", () => {
+    window.open('../pages/proyectos_app.html', "_self");
 }
+);
+
+webPageTrig.addEventListener("click", () => {
+    window.open('../pages/proyectos_web.html', "_self");
+}
+);
+
+arvrPageTrig.addEventListener("click", () => {
+    window.open('../pages/proyectos_ArVr.html', "_self");
+}
+);
+
+aiPageTrig.addEventListener("click", () => {
+    window.open('../pages/proyectos_IA.html', "_self");
+}
+);
+
+gamesPageTrig.addEventListener("click", () => {
+    window.open('../pages/proyectos_games.html', "_self");
+}
+);
+
+robPageTrig.addEventListener("click", () => {
+    window.open('../pages/proyectos_robotic.html', "_self");
+}
+);
 

@@ -57,6 +57,10 @@ const enJSON = localStorage.getItem("infoJSON");
 const infoJSON = JSON.parse(enJSON);
 let typeTech = localStorage.getItem("seccion");
 
+let img1 = document.getElementById("card1");
+    let img2 = document.getElementById("card2");
+    let img3 = document.getElementById("card3");
+
 Choose(typeTech);
 
 function Choose(type){
@@ -67,6 +71,11 @@ function Choose(type){
             project1.innerHTML = infoJSON[0].card1;
             project2.innerHTML = infoJSON[0].card2;
             project3.innerHTML = infoJSON[0].card3;
+            
+            img1.src = "../assets/img/appMobile/appClima.jpg";
+            img2.src = "../assets/img/appMobile/appSeguridad.png";
+            img3.src = "../assets/img/appMobile/wtbdApp.jpg";
+
             break;
 
         case "web":
@@ -75,6 +84,11 @@ function Choose(type){
             project1.innerHTML = infoJSON[1].card1;
             project2.innerHTML = infoJSON[1].card2;
             project3.innerHTML = infoJSON[1].card3;
+            
+            img1.src = "../assets/img/appWeb/adminWeb.png";
+            img2.src = "../assets/img/appWeb/expo.jpg";
+            img3.src = "../assets/img/appWeb/mediapipe.png";
+            
             break;
         case "arvr":
             subtitle.innerHTML = infoJSON[2].description;
@@ -82,6 +96,10 @@ function Choose(type){
             project2.innerHTML = infoJSON[2].card2;
             project1.innerHTML = infoJSON[2].card1;
             project3.innerHTML = infoJSON[2].card3;
+            
+            img1.src = "..git/assets/img/appARVR/RA1.jpg";
+            img2.src = "../assets/img/appARVR/workroom.jpg";
+            img3.src =  "../assets/img/appARVR/tutoialRA.jpg";
             break;
         case "game":
                 subtitle.innerHTML = infoJSON[3].description;
@@ -89,13 +107,21 @@ function Choose(type){
                 project2.innerHTML = infoJSON[3].card2;
                 project3.innerHTML = infoJSON[3].card3;
                 project1.innerHTML = infoJSON[3].card1;
-            break;
+                
+                img1.src = "../assets/img/games/candy.jpg";
+                img2.src = "../assets/img/games/thayer.png";
+                img3.src = "../assets/img/games/plataformas.jpg";
+                break;
         case "robotic":
             subtitle.innerHTML = infoJSON[4].description;
             title.innerHTML = infoJSON[4].id;
             project2.innerHTML = infoJSON[4].card2;
             project1.innerHTML = infoJSON[4].card1;
             project3.innerHTML = infoJSON[4].card3;
+
+            img1.src = "../assets/img/iot/iot.jpg";
+            img2.src = "../assets/img/iot/brazo.jpg";
+            img3.src = "../assets/img/iot/robotmovil.png";
             break;
         
         case "ia":
@@ -104,9 +130,12 @@ function Choose(type){
             project2.innerHTML = infoJSON[5].card2;
             project3.innerHTML = infoJSON[5].card3;
             project1.innerHTML = infoJSON[5].card1;
+
+            img1.src = "../assets/img/ai/cubreboca.jpg";
+            img2.src = "";
+            img3.src = "";
         break;
 
     }
 }
 
-//console.log(guardarLocal("infoJSON", JSON.stringify(infojson)));

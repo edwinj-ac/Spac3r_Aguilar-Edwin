@@ -15,13 +15,14 @@ appPageTrig.addEventListener("click", () => {
     //Choose(flagSection);
 
     //console.log(flagSection);
+    
 }
 );
 
 webPageTrig.addEventListener("click", () => {
     window.open('../pages/proyectos_web.html', "_self");
     localStorage.setItem("seccion", "web");
-    //flagSection = localStorage.getItem("seccion");
+    //flagSection = localStorage.getItem("seccion")
 
     console.log(flagSection);
 }
@@ -52,7 +53,20 @@ robPageTrig.addEventListener("click", () => {
     window.open('../pages/proyectos_web.html', "_self");
     localStorage.setItem('seccion', "robotic");
     //flagSection = localStorage.getItem('seccion');
+   
 }
 );
 
+let miForm  = document.getElementById("form-contact");
+miForm.addEventListener("submit",  evaluateForm);
 
+function evaluateForm(e){
+    e.preventDefault();
+    //alert("Datos Enviados");    
+    Swal.fire({
+        title: "¡Gracias!",
+        text: "Pronto te contactaremos",
+        icon: "success",
+        confirmButtonText: "Continuar",
+    });
+}
